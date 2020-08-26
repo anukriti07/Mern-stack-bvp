@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="logic.js" defer></script>
+<style>
+    .title{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align:center;
+    width: 210px;
+    color:#ff4456;
+    border: solid black 1px;
+    }
+    input[type="button"]
+    {
+    border-radius: 10px;
+    background-color:#ff4456;
+    color: black;
+    border-color:#ff4456 ;
+    width:100%;
+    }
+    input[type="text"]
+    {
+    border-radius: 10px;
+    text-align: right;
+    background-color:white;
+    border-color: black ;
+    width:95%
+    }
+</style>
+<body>
+    <table align="center" cellpadding = "2" width = "40%">
+        <tr class="row">
+            <td class="col" colspan="3"><input id="expression" type="text" ></td>
+            <td class="col"><input type="button" id="AC" value="AC"></td>
+        </tr>
+        </tr>
+        <tr class="row">
+            <td class="col"><input type="button" id="b7" onClick="newvalue(this.value)" value="7" ></td>
+            <td class="col"><input type="button" id="b8" onClick="newvalue(this.value)" value="8" ></td>
+            <td class="col"><input type="button" id="b9" onClick="newvalue(this.value)" value="9" ></td>
+            <td class="col"><input type="button" id="bX" onClick="newvalue(this.value)" value="*" ></td>
+        </tr>
+ 
+        <tr class="row">
+            <td class="col"><input type="button" id="b4" onClick="newvalue(this.value)" value="4" ></td>
+            <td class="col"><input type="button" id="b5" onClick="newvalue(this.value)" value="5" ></td>
+            <td class="col"><input type="button" id="b6" onClick="newvalue(this.value)" value="6" ></td>
+            <td class="col"><input type="button" id="b-" onClick="newvalue(this.value)" value="-" ></td>
+        </tr>
+
+        <tr class="row">
+            <td class="col"><input type="button" onClick="newvalue(this.value)" id="b1" value="1"></td>
+            <td class="col"><input type="button" onClick="newvalue(this.value)" id="b2" value="2" ></td>
+            <td class="col"><input type="button" onClick="newvalue(this.value)" id="b3" value="3" ></td>
+            <td class="col"><input type="button" onClick="newvalue(this.value)" id="b+" value="+" ></td>
+        </tr>
+    
+        <tr class="row">
+            <td class="col"><input type="button" onClick="newvalue(this.value)" id="b0" value="0" ></td>
+            <td class="col"><input type="button" id="division" onClick="newvalue(this.value)" value="/" ></td>
+            <td class="col"><input type="button" id="b." onClick="newvalue(this.value)" value="." ></td>
+            <td class="col"><input type="button" id="equal" value="=" ></td>
+        </tr>
+    </table>
+</body>
+</html>
